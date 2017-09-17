@@ -1,37 +1,37 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/huddryl/Penetration-testing-Attack-scripts/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/huddryl/Penetration-testing-Attack-scripts/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+def private_ip_gen(local = False, a_ = [10, 172, 192], end_ = 5):
+    ip_list = []
+    if local == True:
+        local   = '127.0.0.1'
+        #ip_list.join(local)
+        return ''.join(local)
+    else:
+        for a in a_:
+            if a == 10:
+                for s in range(1,end_):
+                    for d in range(1,end_):
+                        for f in range(1,end_):
+                            ip = str(a) + '.' + str(s) + '.' + str(d) + '.' + str(f)
+                            #print ip
+                            ip_list.append(ip)       
+            if a == 172:
+                s = 16
+                for d in range(1,end_):
+                    for f in range(1,end_):
+                        ip = str(a) + '.' + str(s) + '.' + str(d) + '.' + str(f)
+                        #print ip
+                        ip_list.append(ip)
+            if a == 172:
+                s = 31
+                for d in range(1,end_):
+                    for f in range(1,end_):
+                        ip = str(a) + '.' + str(s) + '.' + str(d) + '.' + str(f)
+                        #print ip
+                        ip_list.append(ip)
+            if a == 192:
+                s = 168
+                for d in range(1,end_):
+                    for f in range(1,end_):
+                        ip = str(a) + '.' + str(s) + '.' + str(d) + '.' + str(f)
+                        #print ip
+                        ip_list.append(ip)
+    return ip_list
