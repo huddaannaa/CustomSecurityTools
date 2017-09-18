@@ -8,3 +8,7 @@ to jam a target
 ### server_app and client_app
 These scripts are examples of python socket programming, these scripts have a function to execute shell commands.
 where the server_app.py is placed on the target system and the operator handles the client_app.py script
+
+### IP_address_generator
+### Port_scanner
+### Resolving_IP
