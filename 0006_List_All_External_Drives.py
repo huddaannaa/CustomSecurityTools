@@ -1,4 +1,10 @@
-def list_external_drives():
+def List_All_External_Drives():
+    """
+    BY H.S Daannaa MSc |CEH
+    This script will display all external drives on a windows system
+    this can be used during post exploitations, or can also be used
+    for troubleshooting purposes
+    """
     import string, os
     available_drives = []
     removable_drives = []
@@ -13,3 +19,4 @@ def list_external_drives():
             print n6
         else:
             pass
+List_All_External_Drives()
