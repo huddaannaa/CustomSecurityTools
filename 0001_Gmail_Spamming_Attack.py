@@ -17,10 +17,10 @@ def spamming_email_4_gmail(source, Password, destination, message):
     #smtpserver.close()(message):
     
 
-source      = ''
-destination = ''
-Password    = ''
+source             = '@gmail.com'
+source_Password    = ''
+destination        = '@gmail.com'
 Number_of_times = 100
 
 for message in range(Number_of_times):
-    spamming_email_4_gmail(source, Password, destination, message)
+    spamming_email_4_gmail(source, source_Password, destination, message)
